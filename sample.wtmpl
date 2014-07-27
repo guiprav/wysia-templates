@@ -1,0 +1,13 @@
+{{partial 'head'}}
+{{partial 'header'}}
+<main>
+	<p>
+		{{#if user}}
+			Welcome back, {{name}}!
+		{{else}}
+			Hello, visitor!
+		{{/if}}
+	</p>
+</main>
+{{partial 'footer'}}
+{{partial 'tail'}}

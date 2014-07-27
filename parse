@@ -1,0 +1,5 @@
+#!/usr/bin/node
+var fs = require('fs');
+var parse = require('./parser');
+var text = fs.readFileSync(process.argv[2], { encoding: 'utf8' });
+console.log(parse(text));
