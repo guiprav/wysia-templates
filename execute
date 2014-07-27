@@ -1,0 +1,5 @@
+#!/usr/bin/node
+var fs = require('fs');
+var wtmpl = require('./wtmpl');
+var text = fs.readFileSync(process.argv[2], { encoding: 'utf8' });
+console.log(wtmpl.execute(text, { user: 'Momony' }));

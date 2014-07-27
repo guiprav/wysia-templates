@@ -3,7 +3,7 @@
 <main>
 	<p>
 		{{#if user}}
-			Welcome back, {{name}}!
+			Welcome back, {{user}}!
 		{{else}}
 			Hello, visitor!
 		{{/if}}
